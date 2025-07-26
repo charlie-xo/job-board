@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { notFound } from "next/navigation";
 
-export default async function JobDetailPage({ params }) {
+export default async function JobDetailPage({ params }: any) {
   const { id } = params;
 
   const { data: job, error } = await supabase
